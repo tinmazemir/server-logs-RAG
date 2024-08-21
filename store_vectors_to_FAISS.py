@@ -31,14 +31,3 @@ def save_indexs():
    index.add(vectors)
    faiss.write_index(index, "data\index_file.index")
 
-def test_search():
-   k = 1
-   index = faiss.read_index("data\index_file.index")
-   model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
-   testSample = model.encode("show me client error from the united states at the morning")
-   testSample = np.array(testSample).astype('float32')
-   testSample = np.array(testSample).reshape(1, 384) 
-   distance, indices = index.search(testSample, k)
-   print(indices)
-
-test_search()
