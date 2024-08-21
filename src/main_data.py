@@ -20,7 +20,7 @@ def generate(quantity):
       enrichedLogs.append(integratedLog)
       vectors.append(vector)
    create_store_vectors.save_indexs(vectors)
-   with open(os.path.join(manipulate_logs.DATA_FOLDER,'enriched_logs2.json'), 'w') as file:
+   with open(os.path.join(manipulate_logs.DATA_FOLDER,'enriched_logs.json'), 'w') as file:
       for i in range(len(logs)):
          data={
             "id": i,
