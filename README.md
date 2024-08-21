@@ -14,6 +14,7 @@
  * chat_interface.py (kullanici ile etkilesime gecme fonksiyonlari)
 
  * API_KEYS.py
+ * RAG.ipynb (google colabs uzerinde hizli veri uretimi icin notebook)
 ### data
   * GeoLite2-City.mmdb (city ve country metadatasi uretilirken kullanilan veri)
   * enriched_logs.json (loglarin ve vectorlarin json dosyasi)

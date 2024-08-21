@@ -21,7 +21,7 @@ def random_url():
    return random.choice(['/index.html', '/about', '/contact', '/products', '/api/v1/data'])
 
 def random_status():
-   return random.choice([200, 201, 400, 401, 403, 404, 500, 502, 503])
+   return random.choice([200, 201, 400, 401, 403, 404, 500, 502, 503, 504, 505, 506])
 
 def random_size():
    return random.randint(100, 5000)
